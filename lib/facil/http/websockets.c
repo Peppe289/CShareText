@@ -98,7 +98,6 @@ void free_ws_buffer(ws_s *owner, struct buffer_s buff) {
 Create/Destroy the websocket object (prototypes)
 */
 
-static ws_s *new_websocket();
 static void destroy_ws(ws_s *ws);
 
 /*******************************************************************************
