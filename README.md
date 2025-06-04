@@ -1,28 +1,20 @@
-# Welcome to your new application
+# 📄 CShareText
 
-Please fill in this README file with relevant information for your application.
+A minimalistic web application that lets users paste any text and instantly generate a shareable link — similar to Pastebin, but even simpler.
 
-To learn more about using the [facil.io framework](http://facil.io), please read through the comments in the source code or the guides on the framework's website.
+# 🚀 Overview
 
-Good luck!
+This app allows users to:
+- Paste any plain text;
+- Get a unique URL to share it.
 
-## What you're starting with
+That’s it. No frills, no accounts, no formatting — just fast, lightweight text sharing.
 
-This folder contains the library code, some boilerplate application code, a complex (yet very helpful) `makefile` and some helper scripts.
+# ⚙️ Tech Stack
 
-### Temporary boilerplate application
+- Backend: Built using facil.io, a high-performance C web application - framework designed for speed, scalability, and low resource consumption.
+- Frontend: Ultra-minimal HTML interface.
 
-The boilerplate code, which is a basic "Hello World!" HTTP application resides in the `src` folder.
+# 💡 Why facil.io?
 
-If you wish to rename the folder, make sure to update the `MAIN_ROOT` in the  `makefile`.
-
-It's also possible to use sub-folders using the `MAIN_SUBFOLDERS` variable in the `makefile` (i.e., add `foo/bar` to add the sub-folder `src/foo/bar`).
-
-### The Library code
-
-The facil.io library source code files reside in the `lib/facil` folder.
-
-It's possible to remove any unused modules. For example, if you're not writing an HTTP application, it's safe to remove the `facil/http` folder and the source files it contains. If your application doesn't need Redis connectivity, it can be removed.
-
-However, since code footprint is usually a minor concern (and can often be fixed by adding instructions to the compiler using the makefile), it is recommended that unused code be left alone in case it would be required at a later stage.
-
+facil.io provides a blazing-fast HTTP server with WebSocket and pub/sub support, ideal for performance-critical applications. Its lightweight architecture made it the perfect choice for a simple, snappy service like this one.
