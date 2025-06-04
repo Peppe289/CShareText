@@ -29,6 +29,9 @@
         <button id="upload">
             Upload
         </button>
+        <div id="gen_link">
+
+        </div>
     </div>
 </body>
 <script>
@@ -56,7 +59,7 @@
       return response.text(); // assuming response is plain text
     })
     .then(data => {
-      //document.getElementById('responseDiv').innerText = data;
+      document.getElementById("gen_link").innerText = "Add " + data + " at this page url";
     })
     .catch(error => {
       //document.getElementById('responseDiv').innerText = 'Error: ' + error.message;

@@ -79,6 +79,7 @@ static void on_http_request(http_s *request)
     fd = open(dest, O_WRONLY | O_CREAT, S_IRWXU | S_IRWXG | S_IRWXO);
     write(fd, ch, strlen(ch) + 1);
     close(fd);
+    http_send_body(request, name, strlen(name));
   }
   else if (strcmp(path, ROOT_URL) != 0)
   {
